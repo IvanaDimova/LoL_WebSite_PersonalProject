@@ -1,0 +1,24 @@
+<head>
+    <link rel="stylesheet" href="loginSyle.css">
+</head>
+<body style="background-color: black;">
+<img src="img/background.png" class="backgroung">
+<div class="d-flex align-items-center flex-column justify-content-center h-100 sign_in">
+    <div class="row ml-2">
+        <h1 class="display-6 sign_in_title">Login</h1>
+    </div>
+    <form class="col-md-12 col-lg-4" novalidate [formGroup]="frmLogin" (submit)="login()">
+
+        <div class="form-group">
+            <label class="note">Username</label>
+            <input type="text" formControlName="username" placeholder="Username" class="form-control sign_in_input">
+        </div>
+        <div class="form-group">
+            <label class="note">Password</label>
+            <input type="password" formControlName="password" placeholder="Password" class="form-control sign_in_input">
+        </div>
+        <p *ngIf="error" class="text-danger">{{error}}</p>
+        <button type="submit" [disabled]="!frmLogin.valid" class="btn btn-primary w-100 my-2"><img src="img/logIn.png" class="log_in"></button>
+    </form>
+</div>
+</body>
