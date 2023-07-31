@@ -1,0 +1,32 @@
+League of Legends (Personal Project Website)
+
+
+- Overview of the project
+
+This project is an amature recriation of the official League of Legends website, it contains a private and a public part that the user can switch between, 
+with the majority of the information being kept in the private part.
+
+
+- Purpose and goals of the project
+
+Despite the project being small and therefore containing not to that extent segnificant information, the idea is for it to grow to being the main sourse of additional 
+information to the gamers, personal statistics and statigues included. This will halp players improve their gaming abilities and see where they stand not only in the short term, 
+but in the long one as well.
+
+
+- How to access the project 
+
+This project is accessable via localhost:4200 after starting it trough the Terminal.
+
+
+- Features
+
+The main feature in this state of the project is it having a private part where users can get personal statistics on their gaming ailities.
+The project is using the Angular CLI tecnology.
+
+
+- Instructions for setting up and running the project locally (if applicable).
+
+After getting the project on a local machine, run it on a code editor and start it from the terminal, ater a successful start zou would be abble to access it fron the brouser by
+typing "localhost:4200" in the address bar.
+
