@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { PublicComponent } from './public.component';
-import { FeaturesComponent } from './features/homeComponent';
+import { HomeComponent } from './home/home.component';
 
 //routes
 const routes: Routes = [
@@ -12,7 +12,7 @@ const routes: Routes = [
         children: [
             { path: '', redirectTo: 'login', pathMatch: 'full' },
             { path: 'login', component: LoginComponent },
-            { path: 'features', component: FeaturesComponent }
+            { path: 'home', component: HomeComponent }
         ]
     }
 ];
@@ -24,4 +24,4 @@ const routes: Routes = [
 export class PublicRoutingModule { }
 
 
-export const PublicComponents = [PublicComponent, LoginComponent,FeaturesComponent]; 
+export const PublicComponents = [PublicComponent, LoginComponent,HomeComponent]; 

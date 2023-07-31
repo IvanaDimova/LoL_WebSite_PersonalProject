@@ -1,24 +1,23 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="['home']">App</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" [routerLink]="['home']">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" [routerLink]="['game']">Game</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" [routerLink]="['champ']">Champions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" [routerLink]="['esport']">E-Sport</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" (click)="logout()">Logout</a>
-        </li>
-      </ul>
-    </div>
+<nav>
+  <div class="menu_up">
+    <a class="menu_text" [routerLink]="['home']">Home</a>
+    <a class="menu_text" aria-current="page" [routerLink]="['game']">Game</a>
+    <a class="menu_text" aria-current="page" [routerLink]="['champ']">Champions</a>
+    <a class="menu_text" aria-current="page" [routerLink]="['esport']">E-Sport</a>
+    <a class="menu_text" (click)="logout()">Logout</a>
   </div>
 </nav>
+
+<div class="mobile_menu_up" onClick="setCurrentScrollPos()">
+  <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+  <label id="closeBtn" for="menu-icon"></label>
+  <nav class="nav" onClick="closeMenu()">
+    <ul class="pt-5">
+      <li><a [routerLink]="['home']">Home</a></li>
+      <li><a class="nav-link" aria-current="page" [routerLink]="['game']">Game</a></li>
+      <li><a class="nav-link" aria-current="page" [routerLink]="['champ']">Champions</a></li>
+      <li><a class="nav-link" aria-current="page" [routerLink]="['esport']">E-Sport</a></li>
+      <li><a class="nav-link" (click)="logout()">Logout</a></li>
+    </ul>
+  </nav>
+</div>
