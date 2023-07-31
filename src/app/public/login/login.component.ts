@@ -4,7 +4,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LoginService, UserAuthService } from 'src/app/core';
 
 @Component({
-    templateUrl: './login.component.html'
+    templateUrl: './login.component.html',
+    styleUrls: ["./login.style.css"]
 })
 
 export class LoginComponent {

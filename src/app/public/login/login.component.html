@@ -1,7 +1,4 @@
-<head>
-    <link rel="stylesheet" href="loginSyle.css">
-</head>
-<body style="background-color: black;">
+
 <img src="img/background.png" class="backgroung">
 <div class="d-flex align-items-center flex-column justify-content-center h-100 sign_in">
     <div class="row ml-2">
@@ -11,14 +8,13 @@
 
         <div class="form-group">
             <label class="note">Username</label>
-            <input type="text" formControlName="username" placeholder="Username" class="form-control sign_in_input">
+            <input type="text" formControlName="username" placeholder="Username" class="form-control">
         </div>
         <div class="form-group">
             <label class="note">Password</label>
-            <input type="password" formControlName="password" placeholder="Password" class="form-control sign_in_input">
+            <input type="password" formControlName="password" placeholder="Password" class="form-control">
         </div>
         <p *ngIf="error" class="text-danger">{{error}}</p>
-        <button type="submit" [disabled]="!frmLogin.valid" class="btn btn-primary w-100 my-2"><img src="img/logIn.png" class="log_in"></button>
+        <button type="submit" [disabled]="!frmLogin.valid" class="btn btn-primary w-100 my-2" style="font-family: Lucida Console;">Log In</button>
     </form>
 </div>
-</body>
